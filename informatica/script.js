@@ -7,43 +7,27 @@ var app = new Vue({
         menuItems: [
             {
                 name: "Appunti",
-                pageSrc: "appunti"
+                pageSrc: "../appunti"
             },
             {
                 name: "LaTeX",
-                pageSrc: "latex"
+                pageSrc: "../latex"
             },
             {
                 name: "Informatica",
                 pageSrc: "informatica"
             }
         ],
-        news: [
-        	{
-                title: "",
-                date: "",
-                text: "",
-                link: "",
-                linkText: "",
-                show: false
-            },
-        ]
     },
     mounted(){
         this.width = window.innerWidth;
         if (this.width < 800){
             this.bigScreen=false;
-        };
+        }
     },
     methods: {
         showMenu(){
             this.menuIsVisible = !this.menuIsVisible && !this.bigScreen;
-        },
-        showText(index){
-            this.news[index].show = !this.news[index].show;
-        },
-        easterEgg(){
-            alert(42);
         }
     }
 });
