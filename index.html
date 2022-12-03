@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davide Borra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!--<link rel="shortcut icon" href="src/favicon.ico">-->
+</head>
+<body>
+    <div id="vueContainer" class="page">
+        <header>
+            <a href="index.html" class="logoContainer">
+                    <!--<img src="src/lambdaNEW.png" alt="LambdaLogo" class="logo">-->
+                    <h1 class="logoName">
+                        Davide Borra
+                    </h1>
+            </a>
+            <ul class="menu" v-if="bigScreen">
+                <li class="menuItem" v-for="item in menuItems">
+                    <a :href="item.pageSrc" class="menuLink">{{ item.name }}</a>
+                </li>
+            </ul>
+            <div class="menu" v-if="!bigScreen" @click="showMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="menuContainer" v-if="menuIsVisible">
+            <ul class="vMenu">
+                <li class="vMenuItem" v-for="item in menuItems">
+                    <a :href="item.pageSrc" class="menuLink">{{ item.name }}</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pageContainer">
+
+	
+            <!-- page body inside here -->
+            <div class="heading">
+                Davide Borra
+            </div>
+            <!--<div class="section">
+                <h1 class="sectionTitle" @click="easterEgg">Calendario</h1>
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FRome&amp;src=Z2FsaWxlby5nYWxpbGVpY3JlbWEuaXRfdmQ0Z25nMWl0Zzd1azQ2NjA0bDNiZHA4bWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%233F51B5&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+
+            </div>-->
+
+            <!--<div class = "section">
+                <h1 class="sectionTitle">News</h1>
+                <div class="cardsContainer">
+                    <div class="card" v-for="(article, index) in news" @click = "showText(index)">
+                        <h2 class="newsTitle"> {{article.title}}</h2>
+                        <h6 class="newsDate">{{article.date}}</h6>
+                        <p class="newsText" v-if="article.show"> {{article.text}} <br>
+                            <a :href="article.link" class="newsLink">{{article.linkText}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>-->
+
+            <!-- end page body-->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
