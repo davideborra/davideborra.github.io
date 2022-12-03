@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LambdaMath</title>
+    <title>Davide Borra</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="shortcut icon" href="../src/favicon.ico">
+   <!-- <link rel="shortcut icon" href="../src/favicon.ico">-->
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 </head>
 <body>
     <div id="vueContainer" class="page">
         <header>
             <a href="../index.html" class="logoContainer">
-                    <img src="../src/lambdaNEW.png" alt="LambdaLogo" class="logo">
+                    <!-- <img src="../src/lambdaNEW.png" alt="LambdaLogo" class="logo"> -->
                     <h1 class="logoName">
-                        LambdaMath
+                        Davide Borra
                     </h1>
             </a>
             <ul class="menu" v-if="bigScreen">
@@ -44,39 +53,16 @@
 
             <!-- page body inside here -->
             <div class="heading">
-                Informatica
+                $$\LaTeX$$
             </div>
             <div class="section">
-                <h1 class="sectionTitle">Lambdalib.h</h1>
-                <p>La nostra libreria per il C, con alcune funzioni utili che è possibile richiamare in modo semplice e veloce. La libreria è disponibile per il download al seguente link:</p>
+                <h1 class="sectionTitle">Lambdatex.sty</h1>
+                <p>Questo è il mio preambolo LaTeX, costantemente aggiornato con nuove macro e funzionalità, necessario per compilare ogni mio lavoro. Per utilizzarlo inserire <tt>\usepackage{lambdatex}</tt> nel preambolo</p>
                 <div class="cardsContainer">
                     <a class="card textAlignCenter" href="src/lambdalib - update 12-11-2022.h" target="_blank">lambdalib - update 12-11-2022</a>
                 </div>
             </div>
-            <div class="section">
-                <h2 class = subsectionTitle>Per utilizzarla è possibile seguire due procedimenti:</h2>
-                <div class="columnsContainer">
-                    <div class = "column">
-                        <h3>Tenendo la libreria nella stessa directory del sorgente </h3>
-
-                        In questo caso la libreria non va richiamata tramite la classica sintassi con le parentesi angolari ma esse vanno sostituite dagli apostrofi. <br>
-
-                        <tt>#include "lambdalib.h"</tt>
-                    </div>
-                    <div class= "column">
-                        <h3>Spostando la libreria nella directory del compilatore</h3>
-
-                        In questo caso è necessario spostare la libreria nella directory dove poi il compilatore andrà a recuperarla (i percorsi sono riferiti alla configurazione di default fornita dai tool di installazione in un sistema operativo Windows 10: <br>
-                        <ul>
-                            <li>Dev-C++:     <tt>C:\Program Files (x86)\Dev-Cpp\MinGW64\x86_64-w64-mingw32\include </tt></li>
-                            <li>MinGW:       <tt>C:\MinGW\include</tt></li>
-                        </ul>
-                        In questo caso per l'utilizzo della libreria si utilizza la sintassi solita con le parentesi angolari: <br>
-
-                        <tt>#include &#60;lambdalib.h&#62;</tt><br>
-                    </div>
-                </div>
-            </div>
+            
             <!-- end page body-->
         </div>
     </div>
