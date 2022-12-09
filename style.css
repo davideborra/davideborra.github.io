@@ -234,6 +234,11 @@ header{
     color: white;
 }
 
+li.aboutMe{
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+}
+
 /* IMAGES */
 .image {
     border-radius: 20px;

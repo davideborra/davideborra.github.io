@@ -6,16 +6,12 @@ var app = new Vue({
         menuIsVisible: false,
         menuItems: [
             {
-                name: "Gare",
-                pageSrc: "../gare"
+                name: "Appunti",
+                pageSrc: "../appunti"
             },
             {
-                name: "Esercizi",
-                pageSrc: "../esercizi"
-            },
-            {
-                name: "Scuola",
-                pageSrc: "https://www.galileicrema.edu.it"
+                name: "LaTeX",
+                pageSrc: "latex"
             },
             {
                 name: "Informatica",

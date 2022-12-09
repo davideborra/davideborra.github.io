@@ -4,6 +4,7 @@ var app = new Vue({
         width: 10,
         bigScreen: true,
         menuIsVisible: false,
+        ita: true,
         menuItems: [
             {
                 name: "Appunti",
@@ -44,6 +45,9 @@ var app = new Vue({
         },
         easterEgg(){
             alert(42);
+        },
+        language(){
+            this.ita=!this.ita;
         }
     }
 });

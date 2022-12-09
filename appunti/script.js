@@ -27,6 +27,14 @@ var app = new Vue({
                 linkText: "Geometria A",
                 show: false
             },
+            {
+                title: "Analisi Matematica A - mod 1",
+                date: "9/12/22",
+                text: "Trascrizioni delle esercitazioni di Analisi tenute da S. Vercellesi",
+                link: "https://github.com/dborra03/esercitazione-analisi-A-2022-23",
+                linkText: "Analisi A - GitHub",
+                show: false
+            },
         ]
     },
     mounted(){
