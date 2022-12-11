@@ -15,7 +15,7 @@ var app = new Vue({
             },
             {
                 name: "Informatica",
-                pageSrc: "informatica"
+                pageSrc: "../informatica"
             }
         ],
     },
