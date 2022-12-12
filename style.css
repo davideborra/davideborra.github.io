@@ -132,12 +132,53 @@ header{
     text-decoration: none;
 }
 
+/*PAGE CONTAINER*/
+
 .pageContainer {
     height: calc(100% - 70px);
+}
+
+.pageBody{
+    height: calc(100% - 53px);
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
+/*BOTTOM BAR*/
+footer{
+    background-color: #0055ff;
+    min-height: 20px;
+    padding: 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.social li:nth-child(n){
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.socialLink:link {
+    color: white; 
+    text-decoration: none;
+}
+
+.socialLink:visited {
+    color: white; 
+    text-decoration: none;
+}
 
 /* Below here CSS about page */
 
@@ -145,6 +186,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     background-color: black;
     height: 300px;
@@ -152,6 +194,20 @@ header{
     font-size: 80px;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 600px) {
+    .heading{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .heading{
+        font-size: 60px;
+    }
+}
+
+
 
 .sectionTitle {
     font-family: 'Roboto', sans-serif;
