@@ -294,6 +294,17 @@ li.aboutMe{
     padding-left: 1.5rem;
     text-indent: -1.5rem;
 }
+/*RickRoll*/
+.rickroll:link {
+    color: black; 
+    text-decoration: none;
+}
+
+.rickroll:visited {
+    color: black; 
+    text-decoration: none;
+}
+
 
 /* IMAGES */
 .image {
