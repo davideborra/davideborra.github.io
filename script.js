@@ -12,7 +12,7 @@ var app = new Vue({
             },
             {
                 name: "LaTeX",
-                pageSrc: "latex"
+                pageSrc: "LaTeX"
             },
             {
                 name: "Informatica",
