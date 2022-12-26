@@ -61,13 +61,35 @@
 
             </div>-->
 
-            <div class = "section">
-                <h1 class="sectionTitle"><a href="https://youtu.be/dQw4w9WgXcQ" class="rickroll">Materiali</a></h1>
-                <div class="cardsContainer">
-                    <div class="card" v-for="(article, index) in news" @click = "showText(index)">
-                        <h2 class="newsTitle"> {{article.title}}</h2>
+            <div class = "section nopaddingtop">
+                <!-- <h1 class="sectionTitle">Esercizi</h1> -->
+                <div class = "filters">
+                    <div class=filter>
+                        <label for="school">Livello: </label>
+                        <select name="school" v-model="schoolQuery">
+                            <option value=0>Tutto</option>
+                            <option value="Liceo">Liceo</option>
+                            <option value="Uni">Uni</option>
+                        </select>
+                    </div>
+                    
+                    <div class = filter>
+                        <label for="topic">Argomento: </label>
+                    <select name="topic" v-model="topicQuery">
+                        <option value="0">Tutto</option>
+                        <option :value="topic" v-for= "topic in topics">{{topic}}</option>
+                    </select>
+                    </div>
+
+                    <div>
+                        <button @click="applyFilters" class = "filtersButton">Applica Filtri</button>
+                    </div>
+                </div>
+<!--                 <h1 class="sectionTitle"><a href="https://youtu.be/dQw4w9WgXcQ" class="rickroll">Materiali</a></h1> -->                <div class="cardsContainer">
+                    <div class="card" v-for="(article, index) in notes" @click = "showText(index)" v-if="article.show">
+                        <h2 class="newsTitle" > {{article.title}}</h2>
                         <h6 class="newsDate">{{article.date}}</h6>
-                        <p class="newsText" v-if="article.show"> {{article.text}} <br>
+                        <p class="newsText" v-if="article.showDetails"> {{article.text}} <br>
                             <a :href="article.link" class="newsLink">{{article.linkText}}</a>
                         </p>
                     </div>
