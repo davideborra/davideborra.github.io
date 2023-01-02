@@ -320,7 +320,8 @@ li.aboutMe{
     padding-left: 1.5rem;
     text-indent: -1.5rem;
 }
-/*RickRoll*/
+
+/*RickRoll and eastereggs*/
 .rickroll:link {
     color: black; 
     text-decoration: none;
@@ -451,4 +452,18 @@ select {
 
 .textAlignCenter {
     text-align: center;
+}
+
+.lang{
+    font-size: larger;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    background-color: #c8d6fd;
+}
+
+.lang:hover{
+    background-color: #0055ff88;
 }
