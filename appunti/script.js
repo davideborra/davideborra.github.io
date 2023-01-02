@@ -59,10 +59,6 @@ var app = new Vue({
         ]
     },
     mounted(){
-        this.width = window.innerWidth;
-        if (this.width < 800){
-            this.bigScreen=false;
-        };
         for (note of this.notes){
             if (!this.topics.includes(note.topic)){
                 this.topics.push(note.topic);   //append
