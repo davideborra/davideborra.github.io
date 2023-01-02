@@ -36,6 +36,13 @@ header{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    border-radius: 15px;
+    padding: 1.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.logoContainer:hover{
+    background-color: #003db7;
 }
 
 .logo {
@@ -71,6 +78,49 @@ header{
     overflow-x: scroll;
 }
 
+.menuItem {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 15px;
+}
+
+.menuItem:hover{
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    background-color: #003db7;
+}
+
+.menuLink:link {
+    color: white; 
+    text-decoration: none;
+}
+
+.menuLink:visited {
+    color: white; 
+    text-decoration: none;
+}
+
+.bigScreen{
+    display: inherit;
+}
+
+.smallScreen{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .bigScreen{
+        display: none;
+    }
+
+    .smallScreen{
+        display: inherit;
+    }
+}
 
 .vMenu {
     flex-direction: column;
@@ -87,15 +137,15 @@ header{
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: large;
-    padding-left: 10px;
-    padding-right: 5px;
-    margin: 10px;
+    padding: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 15px;
 }
 .vMenuItem:hover{
-    font-weight: bold;
-    text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 3px;
+    background-color: #003db7;
 }
 
 .vMenuLink:link {
@@ -104,31 +154,6 @@ header{
 }
 
 .vMenuLink:visited {
-    color: white; 
-    text-decoration: none;
-}
-
-.menuItem {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: large;
-    padding-left: 10px;
-    padding-right: 5px;
-}
-
-.menuItem:hover{
-    font-weight: bold;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 3px;
-}
-
-.menuLink:link {
-    color: white; 
-    text-decoration: none;
-}
-
-.menuLink:visited {
     color: white; 
     text-decoration: none;
 }
