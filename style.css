@@ -71,11 +71,12 @@ header{
 
 .menuContainer {
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 70px);
     background-color: #0055FF;
     float:left;
     overflow-x: hidden;
-    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 20px;
 }
 
 .menuItem {
@@ -129,9 +130,9 @@ header{
     align-items: center;
     list-style-type: none;
     color: white;
-    height: 100%;
     padding-right: 20px;
     padding-bottom: 10px;
+    overflow-y: hidden;
 }
 .vMenuItem{
     font-family: 'Roboto', sans-serif;
