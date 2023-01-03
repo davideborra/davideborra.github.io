@@ -170,13 +170,37 @@ header{
     overflow-y: scroll;
 }
 
+@media screen and (max-width: 520px) {
+    .pageBody{
+        height: calc(100% - 70px);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .pageBody{
+        height: 100%;
+    }
+}
+
+
+
 /*BOTTOM BAR*/
 footer{
     background-color: #0055ff;
-    min-height: 20px;
+    height: 30px;
     padding: 15px;
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 520px) {
+    footer{
+        height: 40px;
+    }
+}
+@media screen and (max-width: 300px) {
+    footer{
+        display: none;
+    }
 }
 
 .social{
