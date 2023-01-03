@@ -2,7 +2,6 @@ var app = new Vue({
     el: "#vueContainer",
     data: {
         width: 10,
-        bigScreen: true,
         menuIsVisible: false,
         ita: true,
         menuItems: [
@@ -34,7 +33,7 @@ var app = new Vue({
     },
     methods: {
         showMenu(){
-            this.menuIsVisible = !this.menuIsVisible && !this.bigScreen;
+            this.menuIsVisible = !this.menuIsVisible;
         },
         showText(index){
             this.news[index].show = !this.news[index].show;

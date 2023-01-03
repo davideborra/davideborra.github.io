@@ -2,7 +2,6 @@ var app = new Vue({
     el: "#vueContainer",
     data: {
         width: 10,
-        bigScreen: true,
         menuIsVisible: false,
         schoolQuery: "0",
         topicQuery: "0",
@@ -33,7 +32,7 @@ var app = new Vue({
     },
     methods: {
         showMenu(){
-            this.menuIsVisible = !this.menuIsVisible && !this.bigScreen;
+            this.menuIsVisible = !this.menuIsVisible;
         },
         showText(index){
             this.notes[index].showDetails = !this.notes[index].showDetails;
