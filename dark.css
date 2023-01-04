@@ -1,0 +1,34 @@
+body{
+    color: white;
+}
+
+.pageContainer{
+    background-color: darkblue;
+}
+
+tt{
+    background-color:black;
+    color: #00FF00;
+}
+
+a:any-link{
+    color: #c8d6fd;
+}
+
+.rickroll:any-link{
+    color: white;
+}
+
+.lang{
+    font-size: larger;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    background-color: #0055ffcc;
+}
+
+.lang:hover{
+    background-color: #c8d6fd;
+}

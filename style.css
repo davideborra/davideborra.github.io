@@ -209,7 +209,6 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     justify-content: flex-start;
     flex-wrap: wrap;
 
@@ -366,7 +365,7 @@ li.aboutMe{
     font-weight: bolder;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color: #c8d6fd ; /* Zun's favourite colour */; 
+    background-color: #c8d6fd ; /* Zun's favourite colour */
     height: 100%;
 }
 
@@ -492,4 +491,8 @@ select {
 
 .lang:hover{
     background-color: #0055ff88;
+}
+
+.fa-moon{
+    width: 10px;
 }
