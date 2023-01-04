@@ -71,7 +71,8 @@ header{
 
 .menuContainer {
     width: 100%;
-    height: calc(100% - 70px);
+    /*height: calc(100% - 70px);*/
+    height: 100%;
     background-color: #0055FF;
     float:left;
     overflow-x: hidden;
