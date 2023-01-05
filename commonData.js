@@ -41,15 +41,13 @@ function getCookie(cname) {
 function checkCookie() {
     let darkTheme = getCookie("darkTheme");
     if (darkTheme == "true") {
-        console.log("true");
         setDark(true);
     } else if (darkTheme == "false") {
-        console.log("false");
         setDark(false);
     } else {
         dark=false;
         setCookie("darkTheme", "false", 30);
-        console.log("pippo");
+        alert("Questo sito utilizza un cookie per mantenere in memoria il tema scuro. Spero non dia fastidio a nessuno.")
     }
   }
 
