@@ -3,8 +3,8 @@ var app = new Vue({
     data: {
         width: 10,
         menuIsVisible: false,
-        ita: true,
         dark: false,
+        ita: true,
         menuItems: [
             {
                 name: "Appunti",
@@ -21,6 +21,8 @@ var app = new Vue({
         ]
     },
     mounted(){
+        checkCookie();
+        setDark(this.dark);
     },
     methods: {
         showMenu(){
@@ -36,13 +38,7 @@ var app = new Vue({
             this.ita=!this.ita;
         },
         changeTheme(){
-            var theme = document.getElementsByTagName('link')[1];
-            if (theme.getAttribute('href') == 'dark.css') {
-                theme.setAttribute('href', '');
-            } else {
-                theme.setAttribute('href', 'dark.css');
-            }
-            this.dark=!this.dark;
+            setDark(!this.dark);
         }
     }
 });
