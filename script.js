@@ -3,7 +3,6 @@ var app = new Vue({
     data: {
         width: 10,
         menuIsVisible: false,
-        dark: false,
         ita: true,
         menuItems: [
             {
@@ -22,7 +21,7 @@ var app = new Vue({
     },
     mounted(){
         checkCookie();
-        setDark(this.dark);
+        setDark(dark);
     },
     methods: {
         showMenu(){
@@ -38,7 +37,12 @@ var app = new Vue({
             this.ita=!this.ita;
         },
         changeTheme(){
-            setDark(!this.dark);
+            if(dark){
+                setDark(false);
+            }else{
+                setDark(true);
+            }
+            
         }
     }
 });

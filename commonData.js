@@ -13,15 +13,16 @@ const pages = [
     }
 ]
 
+var dark = false;
 
 function setCookie(cname,cvalue,exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
+}
   
-  function getCookie(cname) {
+function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -41,8 +42,10 @@ function checkCookie() {
     let darkTheme = getCookie("darkTheme");
     if (darkTheme == "true") {
         console.log("true");
+        setDark(true);
     } else if (darkTheme == "false") {
         console.log("false");
+        setDark(false);
     } else {
         dark=false;
         setCookie("darkTheme", "false", 30);
@@ -52,11 +55,11 @@ function checkCookie() {
 
 function setDark(toDark){
     var theme = document.getElementsByTagName('link')[1];
-    if (toDark) {
+    if (toDark==true) {
         theme.setAttribute('href', 'dark.css');
         dark=true;
         setCookie("darkTheme", "true", 30);
-    } else {
+    } else if (toDark==false) {
         theme.setAttribute('href', '');
         dark=false;
         setCookie("darkTheme", "false", 30);
