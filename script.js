@@ -1,27 +1,20 @@
+var level = 1;
 var app = new Vue({
     el: "#vueContainer",
     data: {
-        width: 10,
         menuIsVisible: false,
         ita: true,
         menuItems: [
             {
-                name: "Appunti",
-                pageSrc: "appunti"
-            },
-            {
-                name: "LaTeX",
-                pageSrc: "LaTeX"
-            },
-            {
-                name: "Informatica",
-                pageSrc: "informatica"
+                name: "",
+                pageSrc: ""
             }
-        ]
+        ],
     },
     mounted(){
         checkCookie();
-        setDark(dark);
+        setDark(dark, level);
+        this.menuItems=loadLinks(0);
     },
     methods: {
         showMenu(){
@@ -38,11 +31,10 @@ var app = new Vue({
         },
         changeTheme(){
             if(dark){
-                setDark(false);
+                setDark(false, level);
             }else{
-                setDark(true);
+                setDark(true, level);
             }
-            
         }
     }
 });

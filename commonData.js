@@ -1,15 +1,15 @@
-const pages = [
+pages = [
     {
         name: "Appunti",
-        pageSrc: "../appunti"
+        pageSrc: "appunti"
     },
     {
         name: "LaTeX",
-        pageSrc: "../LaTeX"
+        pageSrc: "LaTeX"
     },
     {
         name: "Informatica",
-        pageSrc: "../informatica"
+        pageSrc: "informatica"
     }
 ]
 
@@ -41,20 +41,25 @@ function getCookie(cname) {
 function checkCookie() {
     let darkTheme = getCookie("darkTheme");
     if (darkTheme == "true") {
-        setDark(true);
+        setDark(true, level);
     } else if (darkTheme == "false") {
-        setDark(false);
+        setDark(false, level);
     } else {
         dark=false;
         setCookie("darkTheme", "false", 30);
-        alert("Questo sito utilizza un cookie per mantenere in memoria il tema scuro. Spero non dia fastidio a nessuno.")
+        //alert("Questo sito utilizza un cookie per mantenere in memoria il tema scuro. Spero non dia fastidio a nessuno.")
     }
   }
 
-function setDark(toDark){
+function setDark(toDark,level){
     var theme = document.getElementsByTagName('link')[1];
     if (toDark==true) {
-        theme.setAttribute('href', 'dark.css');
+        path=''
+        for(var i=0; i<level; i++){
+            path+="../";
+            console.log("pippo")
+        }
+        theme.setAttribute('href', path+'dark.css');
         dark=true;
         setCookie("darkTheme", "true", 30);
     } else if (toDark==false) {
@@ -62,4 +67,25 @@ function setDark(toDark){
         dark=false;
         setCookie("darkTheme", "false", 30);
     }
+}
+
+function loadLinks(level){
+    var result = [
+        {
+            name: "",
+            pageSrc: ""
+        }
+    ];
+    var j=1;
+    var path=''
+    for(var i=0; i<level; i++){
+        path+="../";
+    }
+    for (const page of pages){
+        result.push(page);
+        result[j].pageSrc=path+result[j].pageSrc;
+        j++;
+    }
+    result.shift();
+    return result;
 }
