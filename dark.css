@@ -3,7 +3,7 @@ body{
 }
 
 .pageContainer{
-    background-color: darkblue;
+    background-color: rgb(0, 0, 100);
 }
 
 tt{
@@ -32,3 +32,34 @@ a:any-link{
 .lang:hover{
     background-color: #c8d6fd;
 }
+
+.easterEgg{
+    color: black;
+}
+
+
+/*MODAL CREATIVE COMMONS*/
+.modal-container {
+    background-color: darkblue;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .modal-header {
+    font-weight: bold;
+    font-size:x-large;
+    margin-top: 0;
+    color: white;
+  }
+  
+  .modal-body {
+    margin: 20px 0;
+    color: white;
+  }
+
+  .ccImg{
+    text-align: center;
+    padding-top: 10px;
+  }
