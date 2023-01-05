@@ -57,7 +57,6 @@ function setDark(toDark,level){
         path=''
         for(var i=0; i<level; i++){
             path+="../";
-            console.log("pippo")
         }
         theme.setAttribute('href', path+'dark.css');
         dark=true;
