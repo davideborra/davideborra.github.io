@@ -1,9 +1,15 @@
-var level = 1;
+var level = 0;
+
+Vue.component("modal", {
+    template: "#modal-template"
+  });
+
 var app = new Vue({
     el: "#vueContainer",
     data: {
         menuIsVisible: false,
         ita: true,
+        showModal: false,
         menuItems: [
             {
                 name: "",
