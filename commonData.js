@@ -54,9 +54,11 @@ function setDark(toDark){
     var theme = document.getElementsByTagName('link')[1];
     if (toDark) {
         theme.setAttribute('href', 'dark.css');
-        app.dark=true;
+        dark=true;
+        setCookie("darkTheme", "true", 30);
     } else {
         theme.setAttribute('href', '');
-        app.dark=false;
+        dark=false;
+        setCookie("darkTheme", "false", 30);
     }
 }
