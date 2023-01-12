@@ -34,7 +34,7 @@ var app = new Vue({
             }else{
                 setDark(true, level);
             }
+            app.dark = dark;
         }
-        app.dark = dark;
     }
 });
