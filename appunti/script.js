@@ -12,6 +12,7 @@ var app = new Vue({
         schoolQuery: "0",
         topicQuery: "0",
         topics: [],
+        dark: false,
         menuItems: [
             {
                 name: "",
@@ -23,6 +24,7 @@ var app = new Vue({
     mounted(){
         checkCookie();
         setDark(dark, level);
+        app.dark = dark;
         this.menuItems=loadLinks(level);
         this.notes = notes
         for (note of this.notes){
@@ -60,6 +62,7 @@ var app = new Vue({
             }else{
                 setDark(true, level);
             }
+            app.dark = dark;
         }
     }
 });
