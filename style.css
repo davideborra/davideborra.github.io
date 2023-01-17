@@ -292,7 +292,7 @@ footer{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: space-evenly;
 }
 
 .card {
