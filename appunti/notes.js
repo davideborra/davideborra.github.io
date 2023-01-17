@@ -32,5 +32,16 @@ notes = [
                 showDetails: false,
                 show: true,
             },
+            {
+                title: "Fisica gen. 1 - mod 1",
+                date: "17/01/23",
+                text: "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi",
+                link: "https://github.com/davideborra/appunti-uni/raw/main/Fisica-generale-1-(mod1)/main.pdf",
+                linkText: "Funzioni",
+                topic: "Analisi",
+                school: "Liceo",
+                showDetails: false,
+                show: true,
+            },
             
         ];
