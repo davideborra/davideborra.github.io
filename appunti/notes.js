@@ -47,7 +47,7 @@ notes = [
                 title: "Combinatoria e calcolo delle probabilità",
                 date: "21/01/22",
                 text: "Riassunto prodotto da me.",
-                link: "https://github.com/davideborra/appunti-liceo/raw/main/combinatoria-e-cdp/Combinatoria_e_CDP.pdf.pdf",
+                link: "https://github.com/davideborra/appunti-liceo/raw/main/combinatoria-e-cdp/Combinatoria_e_CDP.pdf",
                 linkText: "Combinatoria e CDP",
                 topic: "Combinatoria e probabilità",
                 school: "Liceo",
