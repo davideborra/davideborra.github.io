@@ -9,6 +9,7 @@ var app = new Vue({
     data: {
         menuIsVisible: false,
         showModal: false,
+        showCookies: false,
         menuItems: [
             {
                 name: "",
@@ -18,7 +19,7 @@ var app = new Vue({
         level: 1,
     },
     mounted(){
-        checkCookie();
+        this.showCookies=checkCookie();
         setDark(dark, level);
         this.menuItems=loadLinks(level);
     },

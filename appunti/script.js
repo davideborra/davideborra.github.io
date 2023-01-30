@@ -9,6 +9,7 @@ var app = new Vue({
     data: {
         menuIsVisible: false,
         showModal: false,
+        showCookies: false,
         schoolQuery: "0",
         topicQuery: "0",
         topics: [],
@@ -21,7 +22,7 @@ var app = new Vue({
         notes: []
     },
     mounted(){
-        checkCookie();
+        this.showCookies=checkCookie();
         setDark(dark, level);
         this.menuItems=loadLinks(level);
         this.notes = notes

@@ -10,6 +10,7 @@ var app = new Vue({
         menuIsVisible: false,
         ita: true,
         showModal: false,
+        showCookies: false,
         menuItems: [
             {
                 name: "",
@@ -18,7 +19,7 @@ var app = new Vue({
         ],
     },
     mounted(){
-        checkCookie();
+        this.showCookies=checkCookie();
         setDark(dark, level);
         this.menuItems=loadLinks(0);
     },
