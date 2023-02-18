@@ -560,6 +560,9 @@ select {
     border-radius: 5px;
     text-align: center;
   }
+  .modal-default-button:hover{
+    background-color: #003db7;
+  }
   
   /*
    * The following styles are auto-applied to elements with
