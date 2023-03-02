@@ -65,5 +65,15 @@ notes = [
                 showDetails: false,
                 show: true,
             },
-            
+            {
+                title: "Analisi 1",
+                date: "02/03/23",
+                text: "Revisione e ampliamento degli appunti del programma di quinta liceo",
+                link: "https://github.com/davideborra/appunti-liceo/raw/main/analisi-1/main.pdf",
+                linkText: "Analisi 1",
+                topic: "Analisi",
+                school: "Liceo",
+                showDetails: false,
+                show: true,
+            },
         ];
