@@ -75,9 +75,9 @@ notes = [
                 school: "Liceo",
                 showDetails: false,
                 show: true,
-            },        	{
+            },{
                 title: "Geometria A - mod 2",
-                date: "29/11/22",
+                date: "04/04/23",
                 text: "Appunti del corso di Geometria A - mod 1 tenuto dal prof. M. Andreatta",
                 link: "https://github.com/davideborra/appunti-uni/raw/main/Geometria-A-(mod2)%20/main.pdf",
                 linkText: "Geometria A",
