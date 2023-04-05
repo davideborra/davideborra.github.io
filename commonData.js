@@ -10,6 +10,10 @@ pages = [
     {
         name: "Informatica",
         pageSrc: "informatica"
+    },
+    {
+        name: "Slides",
+        pageSrc: "slides"
     }
 ]
 
