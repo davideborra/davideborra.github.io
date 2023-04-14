@@ -52,7 +52,6 @@ function checkCookie() {
         dark=false;
         setCookie("darkTheme", "false", 30);
         //alert("Questo sito utilizza un cookie per mantenere in memoria il tema scuro. Spero non dia fastidio a nessuno.")
-        console.log("pippo");
         return true;
     }
     return false;

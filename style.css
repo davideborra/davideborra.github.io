@@ -347,6 +347,49 @@ li.aboutMe{
     padding-left: 1.5rem;
     text-indent: -1.5rem;
 }
+/*QUOTES*/
+#quote{
+    font-style: italic;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+.quotefrom{
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+.katex-display > .katex { white-space: normal }
+/* Compensate by reducing space around display math */
+.katex-display { margin: 0.5em 0; }
+
+.base, .katex-html, .katex, katex-display{
+    min-width: 100%;
+    display: block;
+}
+.katex-html > .base ~ .base {
+    display: block;
+}
+
+.katex-html{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mord{
+    display: flex;
+    width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+span[class*="mord"][class*=" "], .mspace, .mclose{
+    display: block;
+    width: fit-content;
+    padding: 0px;
+}
 
 /*RickRoll and eastereggs*/
 .rickroll:link {
