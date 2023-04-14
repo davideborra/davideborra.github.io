@@ -23,7 +23,7 @@ var app = new Vue({
         this.showCookies=checkCookie();
         setDark(dark, level);
         this.menuItems=loadLinks(0);
-        this.loadQuote();
+        //this.loadQuote();
     },
     methods: {
         showMenu(){
@@ -45,7 +45,7 @@ var app = new Vue({
                 setDark(true, level);
             }
         },
-        loadQuote(){
+        /*loadQuote(){
             if (Math.floor(Math.random() * 2)==0){
                 var string = "http://numbersapi.com/42";
 
@@ -63,6 +63,6 @@ var app = new Vue({
                 app.quote = katex.renderToString(value,{displayMode: true, output: 'html',});
                 quote.innerHTML = app.quote;
             });
-        }
+        }*/
     }
 });
