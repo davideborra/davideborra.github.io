@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-size:larger;
+    color: black;
+}
+
+#vuecontainer{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.column{
+  width: 50%;
+  height: 80%;
+  padding: 2%;
+}
+
+.spells{
+  height: 100%;
+  overflow-y: scroll;
+  background-color: antiquewhite;
+  padding: 5%;
+  font-family: monospace;
+}
+
+form{
+  background-color: lightgray;
+  padding: 5%;
+  line-height: 40px;
+  height: 100%;
+}
+textarea{
+  width: 100%;
+  height: 20%;
+}
+.reset{
+  height: 50px;
+  width: 250px;
+  font-size: larger;
+}
+center{
+  margin-top: 20px;
+}
