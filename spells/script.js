@@ -21,9 +21,10 @@ var app = new Vue({
     methods: {
         addSpell(){
             this.spells.push(this.current);
+            var temp = this.current.level;
             this.current = {
                 name: "",
-                level: 0,
+                level: temp,
                 school: "",
                 manual: "Manuale del Giocatore",
                 time: "",
