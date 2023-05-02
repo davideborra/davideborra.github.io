@@ -20,8 +20,8 @@ var app = new Vue({
     },
     methods: {
         addSpell(){
-            this.spells.push(this.current);
             var temp = this.current.level;
+            this.spells.push(this.current);
             this.current = {
                 name: "",
                 level: temp,
