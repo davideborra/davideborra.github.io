@@ -14,6 +14,10 @@ pages = [
     {
         name: "Slides",
         pageSrc: "slides"
+    },
+    {
+        name: "D&D",
+        pageSrc: "dnd"
     }
 ]
 
