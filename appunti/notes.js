@@ -85,5 +85,15 @@ notes = [
                 school: "Uni",
                 showDetails: false,
                 show: true,
-            },
+            },{
+                title: "Algebra A - Provetta",
+                date: "06/06/23",
+                text: "Esercizi del corso di Algebra A in preparazione alla seconda prova intermedia",
+                link: "https://github.com/davideborra/appunti-uni/raw/main/provetta-algebra/spi%20algebra%20-%20soluzioni.pdf",
+                linkText: "Geometria A",
+                topic: "Geometria",
+                school: "Uni",
+                showDetails: false,
+                show: true,
+            }
         ];
