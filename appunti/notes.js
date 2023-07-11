@@ -1,4 +1,15 @@
 notes = [
+            {
+                title: "Lezioni Galilei",
+                date: "",
+                text: "Materiale per le lezioni che ho preparato per la Squadra di Matematica del Galilei.",
+                link: "galilei",
+                linkText: "Pagina del Sito dedicata",
+                topic: "0",
+                school: "Liceo",
+                showDetails: false,
+                show: true
+            },    
         	{
                 title: "Geometria A - mod 1",
                 date: "29/11/22",

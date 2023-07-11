@@ -1,4 +1,4 @@
-var level = 1;
+var level = 2;
 
 Vue.component("modal", {
     template: "#modal-template"
@@ -44,11 +44,7 @@ var app = new Vue({
         },
         applyFilters(){
             for (var index in this.notes){
-                if (
-                    (this.notes[index].topic == this.topicQuery || this.topicQuery == "0")
-                    &&
-                    (this.notes[index].school == this.schoolQuery || this.schoolQuery == "0")
-                    ){
+                if (this.notes[index].topic == this.topicQuery || this.topicQuery == "0"){
                         this.notes[index].show = true;
                     }else{
                         this.notes[index].show = false;
