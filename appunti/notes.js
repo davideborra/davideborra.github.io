@@ -44,6 +44,17 @@ notes = [
                 show: true,
             },
             {
+                title: "Geometria Analitica nello Spazio",
+                date: "26/12/22",
+                text: "Riassunto prodotto da me.",
+                link: "https://github.com/davideborra/appunti-liceo/raw/main/analitica-3d/main.pdf",
+                linkText: "Analitica 3D",
+                topic: "Geometria",
+                school: "Liceo",
+                showDetails: false,
+                show: true,
+            },
+            {
                 title: "Fisica gen. 1 - mod 1",
                 date: "17/01/23",
                 text: "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi",
