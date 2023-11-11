@@ -12,6 +12,7 @@ var app = new Vue({
         showCookies: false,
         schoolQuery: "0",
         topicQuery: "0",
+        availabilityQuery: "0",
         topics: [],
         menuItems: [
             {
@@ -48,6 +49,8 @@ var app = new Vue({
                     (this.notes[index].topic == this.topicQuery || this.topicQuery == "0")
                     &&
                     (this.notes[index].school == this.schoolQuery || this.schoolQuery == "0")
+                    &&
+                    (this.availabilityQuery == "0" || this.availabilityQuery == "free" && this.notes[index].free || this.availabilityQuery == "paid" && !this.notes[index].free)
                     ){
                         this.notes[index].show = true;
                     }else{
@@ -64,39 +67,3 @@ var app = new Vue({
         }
     }
 });
-
-
-/*APPUNTI CON COLLEGAMENTI TOLTI
-            {
-                title: "Fisica gen. 1 - mod 1",
-                date: "17/01/23",
-                text: "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi",
-                link: "https://github.com/davideborra/appunti-uni/raw/main/Anno%201/Fisica-generale-1-(mod1)/main.pdf",
-                linkText: "Fisica",
-                topic: "Fisica",
-                school: "Uni",
-                showDetails: false,
-                show: true,
-            },
-            {
-                title: "Geometria A - mod 2",
-                date: "04/04/23",
-                text: "Appunti del corso di Geometria A - mod 1 tenuto dal prof. M. Andreatta",
-                link: "https://github.com/davideborra/appunti-uni/raw/main/Anno%201/Geometria-A-(mod2)%20/main.pdf",
-                linkText: "Geometria A",
-                topic: "Geometria",
-                school: "Uni",
-                showDetails: false,
-                show: true,
-            },{
-                title: "Algebra A - Provetta",
-                date: "06/06/23",
-                text: "Esercizi del corso di Algebra A in preparazione alla seconda prova intermedia",
-                link: "https://github.com/davideborra/appunti-uni/raw/main/Anno%201/seconda-provetta-algebra/spi%20algebra%20-%20soluzioni.pdf",
-                linkText: "Algebra A - SPI con solizioni",
-                topic: "Algebra",
-                school: "Uni",
-                showDetails: false,
-                show: true,
-            }
-*/

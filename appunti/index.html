@@ -110,6 +110,15 @@
                     </select>
                     </div>
 
+                    <div class = filter>
+                        <label for="availability">Disponibilità: </label>
+                    <select name="availability" v-model="availabilityQuery">
+                        <option value=0>Tutto</option>
+                            <option value="free">Libero</option>
+                            <option value="paid">A pagamento</option>
+                    </select>
+                    </div>
+
                     <div>
                         <button @click="applyFilters" class = "filtersButton">Applica Filtri</button>
                     </div>
@@ -117,10 +126,11 @@
                 <div class="section">Questa sezione del sito è al momento in aggiornamento. Sono pertanto stati rimossi gli appunti relativi all'università.</div>
 <!--                 <h1 class="sectionTitle"><a href="https://youtu.be/dQw4w9WgXcQ" class="rickroll">Materiali</a></h1> -->                <div class="cardsContainer">
                     <div class="card" v-for="(article, index) in notes" @click = "showText(index)" v-if="article.show">
-                        <h2 class="newsTitle" > {{article.title}}</h2>
+                        <h2 class="newsTitle" ><i v-if="!article.free" class="fa-solid fa-lock"></i><i v-if="article.free" class="fa-solid fa-lock-open"></i> {{article.title}}</h2>
                         <h6 class="newsDate">{{article.date}}</h6>
                         <p class="newsText" v-if="article.showDetails"> {{article.text}} <br>
-                            <a :href="article.link" class="newsLink">{{article.linkText}}</a>
+                            <a :href="article.link" class="newsLink">{{article.linkText}}</a><br>
+                            <a v-if="!article.free" :href="'mailto:davide.borra@studenti.unitn.it?subject=RICHIESTA%20NOTE%20'+article.title+'&body=Non%20modificare%20il%20campo%20Oggetto,%20scrivere%20qui.'" class="newsLink">Richiesta note</a>
                         </p>
                     </div>
                 </div>

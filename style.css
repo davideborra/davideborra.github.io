@@ -634,4 +634,8 @@ select {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+
+  .fa-lock, .fa-lock-open{
+    font-size: 1rem;
+  }
   

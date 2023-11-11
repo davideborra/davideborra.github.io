@@ -8,7 +8,8 @@ notes = [
                 topic: "0",
                 school: "Liceo",
                 showDetails: false,
-                show: true
+                show: true,
+                free: true,
             },    
         	{
                 title: "Geometria A - mod 1",
@@ -20,6 +21,7 @@ notes = [
                 school: "Uni",
                 showDetails: false,
                 show: true,
+                free: true,
             },
             {
                 title: "Analisi Mat. A - mod 1",
@@ -31,6 +33,7 @@ notes = [
                 school: "Uni",
                 showDetails: false,
                 show: true,
+                free: true,
             },
             {
                 title: "Funzioni ℝ → ℝ",
@@ -42,6 +45,7 @@ notes = [
                 school: "Liceo",
                 showDetails: false,
                 show: true,
+                free: true,
             },
             {
                 title: "Geometria Analitica nello Spazio",
@@ -53,6 +57,7 @@ notes = [
                 school: "Liceo",
                 showDetails: false,
                 show: true,
+                free: true,
             },
             {
                 title: "Combinatoria e calcolo delle probabilità",
@@ -64,6 +69,7 @@ notes = [
                 school: "Liceo",
                 showDetails: false,
                 show: true,
+                free: true,
             },
             {
                 title: "Analisi 1",
@@ -75,5 +81,41 @@ notes = [
                 school: "Liceo",
                 showDetails: false,
                 show: true,
+                free: true,
+            },
+            {
+                title: "Fisica gen. 1 - mod 1",
+                date: "17/01/23",
+                text: "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi, disponibili su richiesta.",
+                link: "anteprime/fisica-gen-1-mod-1.pdf",
+                linkText: "Anteprima",
+                topic: "Fisica",
+                school: "Uni",
+                showDetails: false,
+                show: true,
+                free: false,
+            },
+            {
+                title: "Geometria A - mod 2",
+                date: "04/04/23",
+                text: "Appunti del corso di Geometria A - mod 1 tenuto dal prof. M. Andreatta, disponibili su richiesta.",
+                link: "anteprime/geometria-a-mod-2.pdf",
+                linkText: "Anteprima",
+                topic: "Geometria",
+                school: "Uni",
+                showDetails: false,
+                show: true,
+                free: false,
+            },{
+                title: "Algebra A - Provetta",
+                date: "06/06/23",
+                text: "Esercizi del corso di Algebra A in preparazione alla seconda prova intermedia. Le soluzioni sono disponibili su richiesta.",
+                link: "anteprime/algebra-a-testo.pdf",
+                linkText: "Testo",
+                topic: "Algebra",
+                school: "Uni",
+                showDetails: false,
+                show: true,
+                free: false,
             }
         ];
