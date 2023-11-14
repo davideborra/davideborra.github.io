@@ -123,7 +123,7 @@
                         <button @click="applyFilters" class = "filtersButton">Applica Filtri</button>
                     </div>
                 </div>
-                <div class="section">Questa sezione del sito è al momento in aggiornamento. Sono pertanto stati rimossi gli appunti relativi all'università.</div>
+                <!--<div class="section">Questa sezione del sito è al momento in aggiornamento. Sono pertanto stati rimossi gli appunti relativi all'università.</div>-->
 <!--                 <h1 class="sectionTitle"><a href="https://youtu.be/dQw4w9WgXcQ" class="rickroll">Materiali</a></h1> -->                <div class="cardsContainer">
                     <div class="card" v-for="(article, index) in notes" @click = "showText(index)" v-if="article.show">
                         <h2 class="newsTitle" ><i v-if="!article.free" class="fa-solid fa-lock"></i><i v-if="article.free" class="fa-solid fa-lock-open"></i> {{article.title}}</h2>
