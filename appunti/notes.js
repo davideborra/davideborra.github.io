@@ -117,5 +117,17 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: false,
+            },
+            {
+                title: "Geometria B",
+                date: "02/01/23",
+                text: "Appunti del corso di Geometria B - mod 1 tenuto dal prof. R. Ghiloni, disponibili su richiesta.",
+                link: "anteprime/geometria-B.pdf",
+                linkText: "Anteprima",
+                topic: "Geometria",
+                school: "Uni",
+                showDetails: false,
+                show: true,
+                free: false,
             }
         ];
