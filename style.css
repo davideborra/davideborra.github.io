@@ -194,7 +194,7 @@ footer{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 714px) {
     footer{
         height: 40px;
     }
