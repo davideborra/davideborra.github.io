@@ -140,6 +140,6 @@ notes = [
                 school: "Uni",
                 showDetails: false,
                 show: true,
-                free: false,
+                free: true,
             }
         ];
