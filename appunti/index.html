@@ -130,7 +130,7 @@
                         <h6 class="newsDate">{{article.date}}</h6>
                         <p class="newsText" v-if="article.showDetails"> {{article.text}} <br>
                             <a :href="article.link" class="newsLink">{{article.linkText}}</a><br>
-                            <a v-if="!article.free" :href="'mailto:davide.borra@studenti.unitn.it?subject=RICHIESTA%20NOTE%20'+article.title+'&body=Non%20modificare%20il%20campo%20Oggetto,%20scrivere%20qui.'" class="newsLink">Richiesta note</a>
+                            <a v-if="!article.free" :href="'mailto:davide.borra@studenti.unitn.it?subject=RICHIESTA%20NOTE%20-%20'+article.title+'&body=Non%20modificare%20il%20campo%20Oggetto,%20scrivere%20qui.'" class="newsLink">Richiesta note</a>
                         </p>
                     </div>
                 </div>
