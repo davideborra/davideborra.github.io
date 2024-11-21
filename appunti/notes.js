@@ -88,7 +88,7 @@ notes = [
                 date: "17/01/23",
                 text: "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi.",
                 link: "appunti/Fisica-Generale-1-mod-1.pdf",
-                linkText: "Anteprima",
+                linkText: "Fisica Generale 1 mod 1.pdf",
                 topic: "Fisica",
                 school: "Uni",
                 showDetails: false,
