@@ -1,1 +1,30 @@
+- Implementare sottopagine per le singole note che usano la richiesta get nella pagina 
+    https://stackoverflow.com/questions/5448545/how-to-retrieve-get-parameters-from-javascript
+    https://www.w3docs.com/snippets/javascript/how-to-get-url-parameters.html
+    
+    -------
+    "// Arrow function to get the parameter 
+    // of the specified key 
+    getParameter = (key) => { 
+      
+        // Address of the current window 
+        address = window.location.search 
+      
+        // Returns a URLSearchParams object instance 
+        parameterList = new URLSearchParams(address) 
+      
+        // Returning the respected value associated 
+        // with the provided key 
+        return parameterList.get(key) 
+    } 
+      
+    // Gets the value associated with the key "ie" 
+    console.log(getParameter("ie"))"
+    -------
+    https://www.geeksforgeeks.org/how-to-retrieve-get-parameters-from-javascript/#:~:text=//%20Arrow%20function%20to,%22ie%22
 
+- Nelle suddette sottopagine inserire anteprima pdf 
+    https://stackoverflow.com/questions/14081128/how-to-embed-a-pdf-viewer-in-a-page
+    https://github.com/pipwerks/PDFObject
+    
+- Inserire foto profilo nella homepage
