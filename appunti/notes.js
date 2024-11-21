@@ -86,7 +86,7 @@ notes = [
             {
                 title: "Fisica gen. 1 - mod 1",
                 date: "17/01/23",
-                text: "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi, disponibili su richiesta.",
+                text: "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi.",
                 link: "appunti/Fisica-Generale-1-mod-1.pdf",
                 linkText: "Anteprima",
                 topic: "Fisica",
@@ -98,7 +98,7 @@ notes = [
             {
                 title: "Geometria A - mod 2",
                 date: "04/04/23",
-                text: "Appunti del corso di Geometria A - mod 1 tenuto dal prof. M. Andreatta, disponibili su richiesta.",
+                text: "Appunti del corso di Geometria A - mod 1 tenuto dal prof. M. Andreatta.",
                 link: "appunti/Geometria-A-mod-2.pdf",
                 linkText: "Geometria A - mod 2.pdf",
                 topic: "Geometria",
