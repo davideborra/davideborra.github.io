@@ -10,7 +10,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
-                local: false,
+                local: true,
             },    
         	{
                 title: "Geometria A - mod 1",
