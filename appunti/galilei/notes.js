@@ -5,19 +5,29 @@ notes = [
                 text: "Introduzione ad alcuni strumenti dell'Algebra Lineare, applicazione dell'algoritmo di diagonalizzazione per la determinazione della formula generale per l'n-esimo termine della successione di Fibonacci.",
                 link: [
                     {
-                        link: "https://drive.google.com/file/d/1thgsSby34n_FvYNv4t6iPSuvJtnrk1YY/view?usp=drive_link",
-                        text: "Video"
-                    },
-                    {
-                        link: "https://drive.google.com/file/d/1cdb1rmJOA9HbkTFRPM6k-U_ODU27z1ZK/view?usp=drive_link",
+                        link: "notes/linalg_fib/alg-lineare-fibonacci-note.pdf",
                         text: "Note in LaTeX"
                     },
                     {
-                        link: "https://drive.google.com/file/d/1DHk31suJGosWJiDPXMXMAaDnd8Onin7z/view?usp=drive_link",
+                        link: "notes/linalg_fib/alg-lineare-fibonacci-in-aula.pdf",
                         text: "Lavagna"
                     }
                 ],
                 topic: "Algebra Lineare",
+                showDetails: false,
+                show: true,
+            },
+            {
+                title: "In",
+                date: "10/11/2024",
+                text: "Introduzione alla teoria degli anelli commutativi con unità, strutturata attraverso l'esempio dell'anello dei numeri interi. Divisione con resto, MCD, MCM, anelli ℤ/nℤ, teorema cinese del resto.",
+                link: [
+                    {
+                        link: "notes/div-arit-mod/Divisibilita-aritmetica-modulare.pdf",
+                        text: "Note in LaTeX"
+                    }
+                ],
+                topic: "Algebra",
                 showDetails: false,
                 show: true,
             },
