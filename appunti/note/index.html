@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davide Borra</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="https://kit.fontawesome.com/d2ab5b4e79.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../src/blue-book-ms.png">
+    <link rel="shortcut icon" href="../../src/blue-book-ms.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
 
@@ -84,58 +84,25 @@
             <div class="heading"  title="Maths by Sergey Nivens/www.shutterstock.com">
                 Appunti
             </div>
-            <!--<div class="section">
-                <h1 class="sectionTitle" @click="easterEgg">Calendario</h1>
-                <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FRome&amp;src=Z2FsaWxlby5nYWxpbGVpY3JlbWEuaXRfdmQ0Z25nMWl0Zzd1azQ2NjA0bDNiZHA4bWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%233F51B5&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-
-            </div>-->
-
-            <div class = "section nopaddingtop">
-                <!-- <h1 class="sectionTitle">Esercizi</h1> -->
-                <div class = "filters">
-                    <div class=filter>
-                        <label for="school">Livello: </label>
-                        <select name="school" v-model="schoolQuery">
-                            <option value=0>Tutto</option>
-                            <option value="Liceo">Liceo</option>
-                            <option value="Uni">Uni</option>
-                        </select>
+            <div class="section">
+                <h1 class="sectionTitle">
+                    {{ currentNote.title }}
+                    <i v-if="!currentNote.free" class="fa-solid fa-lock"></i>
+                    <i v-if="currentNote.free" class="fa-solid fa-lock-open"></i>
+                </h1>
+                <h3 class="subtitle">Data: {{ currentNote.date }} <br>Livello: {{ currentNote.school }} <br> Argomento: {{ currentNote.topic }}</h3>
+                <p class="section">{{ currentNote.text }}</p>
+                <object :data="'../'+currentNote.link" type="application/pdf" width="100%" height="800px" v-if="currentNote.local">
+                    <div class="cardsContainer">
+                        <a class="card textAlignCenter" :href="'../'+currentNote.link">{{currentNote.linkText}}</a>
                     </div>
-                    
-                    <div class = filter>
-                        <label for="topic">Argomento: </label>
-                    <select name="topic" v-model="topicQuery">
-                        <option value="0">Tutto</option>
-                        <option :value="topic" v-for= "topic in topics">{{topic}}</option>
-                    </select>
+                </object>
+                <object :data="+currentNote.link" type="application/pdf" width="100%" height="800px" v-if="!currentNote.local">
+                    <div class="cardsContainer">
+                        <a class="card textAlignCenter" :href="currentNote.link">{{currentNote.linkText}}</a>
                     </div>
-
-                    <div class = filter>
-                        <label for="availability">Disponibilità: </label>
-                    <select name="availability" v-model="availabilityQuery">
-                        <option value=0>Tutto</option>
-                            <option value="free">Libero</option>
-                            <option value="paid">A pagamento</option>
-                    </select>
-                    </div>
-
-                    <div>
-                        <button @click="applyFilters" class = "filtersButton">Applica Filtri</button>
-                    </div>
-                </div>
-                <!--<div class="section">Questa sezione del sito è al momento in aggiornamento. Sono pertanto stati rimossi gli appunti relativi all'università.</div>-->
-<!--                 <h1 class="sectionTitle"><a href="https://youtu.be/dQw4w9WgXcQ" class="rickroll">Materiali</a></h1> -->                
-                <div class="cardsContainer">
-                    <div class="card" v-for="(article, index) in notes" @click = "showText(index)" v-if="article.show">
-                        <h2 class="newsTitle" ><i v-if="!article.free" class="fa-solid fa-lock"></i><i v-if="article.free" class="fa-solid fa-lock-open"></i> {{article.title}}</h2>
-                        <h6 class="newsDate">{{article.date}}</h6>
-                        <p class="newsText" v-if="article.showDetails"> {{article.text}} <br>
-                            <a :href="article.link" class="newsLink">{{article.linkText}}</a> <a :href="'note?index='+index" class="newsLink"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
-                            <a v-if="!article.free" :href="'mailto:davide.borra@studenti.unitn.it?subject=RICHIESTA%20NOTE%20-%20'+article.title+'&body=Non%20modificare%20il%20campo%20Oggetto,%20scrivere%20qui.'" class="newsLink">Richiesta note</a>
-                        </p>
-                    </div>
-                </div>
-                <p xmlns:cc="http://creativecommons.org/ns#" style="text-align: center;">If not specified elsewhere, this work is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+                </object>
+                
             </div>
         </div>
             <!-- end page body-->
@@ -164,8 +131,8 @@
     </div>
         </div>
     </div>
-    <script src="../commonData.js"></script>
-    <script src="notes.js"></script>
+    <script src="../../commonData.js"></script>
+    <script src="../notes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

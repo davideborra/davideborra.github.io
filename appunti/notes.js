@@ -10,6 +10,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: false,
             },    
         	{
                 title: "Geometria A - mod 1",
@@ -22,6 +23,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: false,
             },
             {
                 title: "Analisi Mat. A - mod 1",
@@ -34,6 +36,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: false,
             },
             {
                 title: "Funzioni ℝ → ℝ",
@@ -46,6 +49,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: false,
             },
             {
                 title: "Geometria Analitica nello Spazio",
@@ -58,6 +62,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: false,
             },
             {
                 title: "Combinatoria e calcolo delle probabilità",
@@ -70,6 +75,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: false,
             },
             {
                 title: "Analisi 1",
@@ -82,6 +88,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: false,
             },
             {
                 title: "Fisica gen. 1 - mod 1",
@@ -94,6 +101,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: true,
             },
             {
                 title: "Geometria A - mod 2",
@@ -106,6 +114,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: true,
             },{
                 title: "Algebra A - Provetta",
                 date: "06/06/23",
@@ -117,6 +126,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: false,
+                local: true,
             },
             {
                 title: "Geometria B",
@@ -129,6 +139,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: false,
+                local: true,
             },
             {
                 title: "[WiP] Analisi Mat. B",
@@ -141,6 +152,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: false,
+                local: true,
             },
             {
                 title: "Fondamenti di Fisica Matematica",
@@ -153,6 +165,7 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: false,
+                local: true,
             },
             {
                 title: "Formulario di Analisi Numerica I",
@@ -165,5 +178,6 @@ notes = [
                 showDetails: false,
                 show: true,
                 free: true,
+                local: true,
             }
         ];
