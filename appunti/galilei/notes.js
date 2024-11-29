@@ -19,7 +19,7 @@ notes = [
             },
             {
                 title: "Divisibilità e aritmetica modulare",
-                date: "10/11/2024",
+                date: "29/11/2024",
                 text: "Introduzione alla teoria degli anelli commutativi con unità, strutturata attraverso l'esempio dell'anello dei numeri interi. Divisione con resto, MCD, MCM, anelli ℤ/nℤ, teorema cinese del resto.",
                 link: [
                     {
