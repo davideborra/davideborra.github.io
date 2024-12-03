@@ -179,5 +179,18 @@ notes = [
                 show: true,
                 free: true,
                 local: true,
+            },
+            {
+                title: "The Cayley–Dickson construction",
+                date: "04/12/24",
+                text: "Project fot the third year of the Excellence Programme in the Bachelor’s Degree in Mathematics.",
+                link: "appunti/cayley-dickson.pdf",
+                linkText: "cayley-dickson.pdf",
+                topic: "Algebra",
+                school: "Uni",
+                showDetails: false,
+                show: true,
+                free: true,
+                local: true,
             }
         ];
