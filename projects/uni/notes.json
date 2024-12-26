@@ -1,0 +1,101 @@
+[ 
+    {
+        "title": "Geometria A - mod 1",
+        "date": "29/11/22",
+        "text": "Appunti del corso di Geometria A - mod 1 tenuto dal prof. L.E. Sola Conde",
+        "link": "https://davideborra.notion.site/Geometria-A-f587dd8f407f40cf8c3097028891a791",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Geometry", "First Year", "Free"]
+    },
+    {
+        "title": "Analisi Mat. A - mod 1",
+        "date": "9/12/22",
+        "text": "Trascrizioni delle esercitazioni di Analisi tenute da S. Vercellesi",
+        "link": "https://github.com/davideborra/esercitazione-analisi-A-2022-23",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Analysis", "First Year", "Free"]
+    },
+    {
+        "title": "Fisica gen. 1 - mod 1",
+        "date": "17/01/23",
+        "text": "Note prodotte in preparazione all'esame basate sul materiale fornito dalla prof.ssa Dolesi.",
+        "link": "src/Fisica-Generale-1-mod-1.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Physics", "First Year", "Free"]
+    },
+    {
+        "title": "Geometria A - mod 2",
+        "date": "04/04/23",
+        "text": "Appunti del corso di Geometria A - mod 1 tenuto dal prof. M. Andreatta.",
+        "link": "src/Geometria-A-mod-2.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Geometry", "First Year", "Free"]
+    },{
+        "title": "Algebra A - Provetta",
+        "date": "06/06/23",
+        "text": "Esercizi del corso di Algebra A in preparazione alla seconda prova intermedia. Le soluzioni sono disponibili su richiesta.",
+        "link": "src/algebra-a-provetta.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Algebra", "First Year", "Free"]
+    },
+    {
+        "title": "Geometria B",
+        "date": "18/09/24",
+        "text": "Appunti del corso di Geometria B tenuto dai proff. R. Ghiloni e A. Perotti, disponibili su richiesta.",
+        "link": "src/geometria-B.pdf",
+        "free": "false",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Geometry", "Topology", "Analysis", "Second Year"]
+    },
+    {
+        "title": "[WiP] Analisi Mat. B",
+        "date": "18/09/24",
+        "text": "Versione completata con le dimostrazioni delle note del corso di Analisi Matematica B fornite dal prof. S. Delladio, disponibili su richiesta.",
+        "link": "src/analisi-B.pdf",
+        "free": "false",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Analysis", "Second Year"]
+    },
+    {
+        "title": "Fondamenti di Fisica Matematica",
+        "date": "18/09/24",
+        "text": "Riassunto delle note del corso di Fondamenti di Fisica Matematica (mod 1) tenuto nell'a.a. 2023-24 dal prof. V. Moretti, disponibili su richiesta.",
+        "link": "src/ffm1.pdf",
+        "free": "false",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Physics", "Second Year"]
+    },
+    {
+        "title": "Formulario di Analisi Numerica I",
+        "date": "27/01/24",
+        "text": "Formulario per l'esame di Analisi Numerica I. Potrebbe contenere qualche errore, se ne trovate segnalatemeli che correggo al più presto.",
+        "link": "src/Formulario%20numerica.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Numerical Analysis", "Second Year", "Free"]
+    },
+    {
+        "title": "The Cayley–Dickson construction",
+        "date": "04/12/24",
+        "text": "Project fot the third year of the Excellence Programme in the Bachelor’s Degree in Mathematics.",
+        "link": "src/cayley-dickson.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "eng",
+        "tags": ["Algebra", "PEM", "Free"]
+    }
+]

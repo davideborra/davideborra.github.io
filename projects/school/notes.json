@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Funzioni ℝ → ℝ",
+        "date": "26/12/22",
+        "text": "Riassunto prodotto da me.",
+        "link": "https://github.com/davideborra/appunti-liceo/raw/main/funzioni/main.pdf",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Analisys"]
+    },
+    {
+        "title": "Geometria Analitica nello Spazio",
+        "date": "26/12/22",
+        "text": "Riassunto prodotto da me.",
+        "link": "https://github.com/davideborra/appunti-liceo/raw/main/analitica-3d/main.pdf",
+        "linkText": "Analitica 3D",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Geometry"]
+    },
+    {
+        "title": "Combinatoria e calcolo delle probabilità",
+        "date": "21/01/23",
+        "text": "Riassunto prodotto da me.",
+        "link": "https://github.com/davideborra/appunti-liceo/raw/main/combinatoria-e-cdp/main.pdf",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Combinatorics", "Probability"]
+    },
+    {
+        "title": "Analisi 1",
+        "date": "02/03/23",
+        "text": "Revisione e ampliamento degli appunti del programma di quinta liceo",
+        "link": "https://github.com/davideborra/appunti-liceo/raw/main/analisi-1/main.pdf",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Analisys"]
+    },
+    {
+        "title": "Algebra Lineare e Fibonacci",
+        "date": "11/07/2023",
+        "text": "Introduzione ad alcuni strumenti dell'Algebra Lineare, applicazione dell'algoritmo di diagonalizzazione per la determinazione della formula generale per l'n-esimo termine della successione di Fibonacci.",
+        "link": "notes/alg-lineare-fibonacci-note.pdf",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Algebra", "Geometry", "Maths Team"]
+    },
+    {
+        "title": "Divisibilità e aritmetica modulare",
+        "date": "29/11/2024",
+        "text": "Introduzione alla teoria degli anelli commutativi con unità, strutturata attraverso l'esempio dell'anello dei numeri interi. Divisione con resto, MCD, MCM, anelli ℤ/nℤ, teorema cinese del resto.",
+        "link": "notes/Divisibilita-aritmetica-modulare.pdf",
+        "free": "true",
+        "local": "false",
+        "lang": "ita",
+        "tags": ["Algebra", "Maths Team"]
+    }
+]
