@@ -67,7 +67,6 @@ function loadNotes(notes){
 
 function loadSingleNote(notes, index){
     note = notes[index];
-    console.log(note);
     var div=document.createElement('div');
     div.setAttribute('class', "card overflow-hidden shadow rounded-4 border-0 mb-5");
     string  = "";

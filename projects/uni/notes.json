@@ -97,5 +97,15 @@
         "local": "true",
         "lang": "eng",
         "tags": ["Algebra", "PEM", "Free"]
+    },
+    {
+        "title": "Algebra Commutativa",
+        "date": "21/01/25",
+        "text": "Note del corso di Algebra Commutativa, tenuto nell' a.a. 2024/25 dal prof. E. Ballico, disponibili su richiesta.",
+        "link": "src/disalgcomm.pdf",
+        "free": "false",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Algebra", "Third Year"]
     }
 ]
