@@ -107,5 +107,15 @@
         "local": "true",
         "lang": "ita",
         "tags": ["Algebra", "Third Year"]
+    },
+    {
+        "title": "Tesi",
+        "date": "21/07/25",
+        "text": "Elaborato per la Prova Finale del Corso di Laurea in Matematica. \n Introduzione alla teoria dei Gruppi Algebrici e alle Varietà Razionali Omogenee, con un focus sulle mappe di nesting. La presentazine è disponibile <a href='src/beamertesi.pdf'>qui</a>.",
+        "link": "src/tesi.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Algebra", "Third Year", "Geometry", "Free"]
     }
 ]
