@@ -7027,6 +7027,10 @@ textarea.form-control-lg {
   display: flex !important;
 }
 
+.row-reverse{
+  flex-direction: row-reverse;
+}
+
 .d-flex-card {
   display: flex !important;
 }
