@@ -7,7 +7,7 @@
         "free": "true",
         "local": "false",
         "lang": "ita",
-        "tags": ["Geometry", "First Year", "Free"]
+        "tags": ["Geometry", "Undergraduate - Year 1", "Free"]
     },
     {
         "title": "Analisi Mat. A - mod 1",
@@ -17,7 +17,7 @@
         "free": "true",
         "local": "false",
         "lang": "ita",
-        "tags": ["Analysis", "First Year", "Free"]
+        "tags": ["Analysis", "Undergraduate - Year 1", "Free"]
     },
     {
         "title": "Fisica gen. 1 - mod 1",
@@ -27,7 +27,7 @@
         "free": "true",
         "local": "true",
         "lang": "ita",
-        "tags": ["Physics", "First Year", "Free"]
+        "tags": ["Physics", "Undergraduate - Year 1", "Free"]
     },
     {
         "title": "Geometria A - mod 2",
@@ -37,7 +37,7 @@
         "free": "true",
         "local": "true",
         "lang": "ita",
-        "tags": ["Geometry", "First Year", "Free"]
+        "tags": ["Geometry", "Undergraduate - Year 1", "Free"]
     },{
         "title": "Algebra A - Provetta",
         "date": "06/06/23",
@@ -46,7 +46,7 @@
         "free": "true",
         "local": "true",
         "lang": "ita",
-        "tags": ["Algebra", "First Year", "Free"]
+        "tags": ["Algebra", "Undergraduate - Year 1", "Free"]
     },
     {
         "title": "Geometria B",
@@ -56,7 +56,7 @@
         "free": "false",
         "local": "true",
         "lang": "ita",
-        "tags": ["Geometry", "Topology", "Analysis", "Second Year"]
+        "tags": ["Geometry", "Topology", "Analysis", "Undergraduate - Year 2"]
     },
     {
         "title": " Analisi Mat. B",
@@ -66,7 +66,7 @@
         "free": "false",
         "local": "true",
         "lang": "ita",
-        "tags": ["Analysis", "Second Year"]
+        "tags": ["Analysis", "Undergraduate - Year 2"]
     },
     {
         "title": "Fondamenti di Fisica Matematica",
@@ -76,7 +76,7 @@
         "free": "false",
         "local": "true",
         "lang": "ita",
-        "tags": ["Physics", "Second Year"]
+        "tags": ["Physics", "Undergraduate - Year 2"]
     },
     {
         "title": "Formulario di Analisi Numerica I",
@@ -86,12 +86,12 @@
         "free": "true",
         "local": "true",
         "lang": "ita",
-        "tags": ["Numerical Analysis", "Second Year", "Free"]
+        "tags": ["Numerical Analysis", "Undergraduate - Year 2", "Free"]
     },
     {
         "title": "The Cayley–Dickson construction",
         "date": "04/12/24",
-        "text": "Project fot the third year of the Excellence Programme in the Bachelor’s Degree in Mathematics.",
+        "text": "Project fot the Third Year of the Excellence Programme in the Bachelor’s Degree in Mathematics.",
         "link": "src/cayley-dickson.pdf",
         "free": "true",
         "local": "true",
@@ -106,7 +106,7 @@
         "free": "false",
         "local": "true",
         "lang": "ita",
-        "tags": ["Algebra", "Third Year"]
+        "tags": ["Algebra", "Undergraduate - Year 3"]
     },
     {
         "title": "Tesi",
@@ -115,7 +115,7 @@
         "link": "src/tesi.pdf",
         "free": "true",
         "local": "true",
-        "lang": "ita",
-        "tags": ["Algebra", "Third Year", "Geometry", "Free"]
+        "lang": "eng",
+        "tags": ["Algebra", "Undergraduate - Year 3", "Geometry", "Free"]
     }
 ]
