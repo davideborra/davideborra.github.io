@@ -10,6 +10,16 @@
         "tags": ["Geometry", "Undergraduate - Year 1", "Free"]
     },
     {
+        "title": "Geometria A - Tutorato",
+        "date": "11/11/25",
+        "text": "Materiali per il tutorato di del corso di Geometria A",
+        "link": "/projects/uni/geoA",
+        "free": "page",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Geometry", "Undergraduate - Year 1", "Free"]
+    },
+    {
         "title": "Analisi Mat. A - mod 1",
         "date": "9/12/22",
         "text": "Trascrizioni delle esercitazioni di Analisi tenute da S. Vercellesi",

@@ -67,9 +67,6 @@ function loadNotes(notes){
 
 function loadSingleNote(notes, index){
     note = notes[index];
-    if (note.free = "page"){
-        location.href=note.link;
-    }
     var div=document.createElement('div');
     div.setAttribute('class', "card overflow-hidden shadow rounded-4 border-0 mb-5");
     string  = "";
