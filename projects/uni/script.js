@@ -18,7 +18,11 @@ function loadNotes(notes){
     for ([index, note] of notes.entries()){
         var div=document.createElement('div');
         div.setAttribute('class', "card overflow-hidden shadow-clickable rounded-4 border-0 mb-5");
-        div.setAttribute('onclick', `location.href='?index=${index}';`);
+        if(note.free == "page"){
+            div.setAttribute('onclick', `location.href='${note.link}';`);
+        }else{
+            div.setAttribute('onclick', `location.href='?index=${index}';`);
+        }
         div.setAttribute("style", "cursor: pointer;");
         div.innerHTML = `<div class="card-body p-0">
                     <div class="d-flex align-items-center">
@@ -67,9 +71,6 @@ function loadNotes(notes){
 
 function loadSingleNote(notes, index){
     note = notes[index];
-    if (note.free = "page"){
-        location.href=note.link;
-    }
     var div=document.createElement('div');
     div.setAttribute('class', "card overflow-hidden shadow rounded-4 border-0 mb-5");
     string  = "";
