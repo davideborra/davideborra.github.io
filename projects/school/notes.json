@@ -63,7 +63,7 @@
     {
         "title": "Algebra Basic",
         "date": "02/02/2026",
-        "text": "Polinomi",
+        "text": "Introduzione alle tecniche dimostrative attraverso i polinomi. Note di Davide Santoni.",
         "link": "src/Stage_olimpico_algebra_base.pdf",
         "free": "true",
         "local": "false",
