@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
 function tauto_div(note){
     var div=document.createElement('div');
     div.setAttribute('class', "card overflow-hidden rounded-4 border-0 mb-5");
+    printDate = "";
+    if (note.date == ""){}
+    else{
+        date = note.date.split("-");
+        printDate = date[2]+"/"+date[1]+"/"+date[0];
+    }
     div.innerHTML = `<div class="card-body p-0">
             <div class="d-flex align-items-center">
                 <div class="p-5" style="width:100%;">
@@ -36,7 +42,7 @@ function tauto_div(note){
                         ${note.author}
                     </div>
                     <div>
-                    <input type = date class="text-secondary fw-bolder date" value = "${note.date}" readonly="true" disabled="true"></input> 
+                    <i class="text-secondary fw-bolder date"> ${printDate} &emsp;</i> 
                     <i class="bi ${logicSymb(note.type)}"></i>
                     </div>
                     </div>
