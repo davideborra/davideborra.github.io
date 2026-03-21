@@ -1,7 +1,8 @@
 node =  document.getElementById('cardsContainer');
 
-// KaTeX configuration
-document.addEventListener("DOMContentLoaded", function() {
+tautoNum = 0
+
+function renderTex(){
     renderMathInElement(document.body, {
     // customised options
     // • auto-render specific keys, e.g.:
@@ -14,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // • rendering keys, e.g.:
     throwOnError : false
     });
+}
+
+// KaTeX configuration
+document.addEventListener("DOMContentLoaded", function() {
+    renderTex();
 });
 
 function tauto_div(note){
@@ -67,7 +73,8 @@ function loadNotes(notes){
     for (note of notes){
         node.appendChild(tauto_div(note));
     }
-    document.getElementById("number").innerHTML=notes.length + " tautologie"
+    tautoNum = notes.length;
+    document.getElementById("number").innerHTML= tautoNum+ " tautologie"
 }
 
 function add_tauto(){
@@ -84,7 +91,10 @@ function add_tauto(){
     document.getElementById("new_author").value = ""
     document.getElementById("new_date").value=today();
 
-    notifyNewTauto(new_tauto);
+    document.getElementById("number").innerHTML= ++tautoNum + " tautologie"
+
+    renderTex();
+    // notifyNewTauto(new_tauto);
 }
 
 function today(){
@@ -156,3 +166,6 @@ async function notifyNewTauto(tauto){
     // show notification or error
     granted ? showNotification() : showError();
 }
+
+
+// Aggiungi un modo di esportare in TeX
