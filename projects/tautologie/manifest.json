@@ -1,0 +1,16 @@
+{
+    "name": "Tautologie",
+    "short_name": "Tauto",
+    "description": "A simple app to collect tautologies said by people we know (or we don't)",
+    "icons": [
+        {
+            "src": "src/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+}

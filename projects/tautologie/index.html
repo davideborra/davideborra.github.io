@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Tautologie</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../../css/styles.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="manifest" href="manifest.json" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav style = "display: none;" class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="../../"><span class="fw-bolder text-primary">Davide Borra</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../resume/">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../projects/">Projects</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline" >Tautologie</span></h1>
+                    </div>
+                
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8" id="cardsContainer">
+                            <!--box to add new tautology-->
+                            <div class="card overflow-hidden rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5" style="width:100%;">
+                                        <textarea class="bg-light p-4 rounded-4" style="display: block;" id="new_text" placeholder="Tautologia"></textarea>
+                                        <div class="d-flex-scale">
+                                        <input type = text class="p-2" stle = "display:: block;" id="new_author" placeholder="Autore">
+                                            
+                                        </input>
+                                        <div>
+                                            <input type = date class="text-secondary fw-bolder date" id="new_date"></input> 
+                                            <button id = switcher onclick="switchType();" ><i class="bi bi-info-circle-fill"></i></button>
+                                        </div>
+                                        </div>
+                                        <div class="d-flex" style="justify-content: center;">
+                                            <a class="btn btn-primary btn-lg px-4 py-3 me-sm-3 fs-6 fw-bolder" onclick="add_tauto()" style="margin: 0 !important;"><i class="bi bi-plus-lg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <!-- TO BE FILLED BY JS -->
+                            
+                        </div>
+                        <div id = number>
+                            <!--to be filled by JS-->
+                        </div>
+                    </div>
+                </div>
+                
+                <div id = overlay >
+                    <button class = "btn btn-primary btn-lg px-3 py-3 me-sm-3 fs-6 fw-bolder sidebutton" onclick = "window.scrollTo(0, document.body.scrollHeight);">
+                        <i class="bi bi-arrow-down"></i>
+                    </button>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <!-- <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Need some of these notes?</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="../../index.html#contact">Contact me</a>
+                    </div>
+                </div>
+            </section> -->
+            
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Davide Borra 2025</div></div>
+                    <!-- <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.40/dist/katex.min.css" integrity="sha384-mON/ih42JsLUsSfSt0ZgICEtv3P1FSm/qGKVl2cfuvShhc8Q91I7HhJFWtoKlq3k" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.40/dist/katex.min.js" integrity="sha384-KVukqdeLrVnRMhtuS+JxbqQzFmHDyzAWj//smK5ksfZKEPz0hSvLyYvAUE9yJuzF" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.40/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+
+        <!-- Core theme JS-->
+        <script src="../../js/scripts.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

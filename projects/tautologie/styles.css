@@ -1,0 +1,83 @@
+:root{
+    --bs-secondary: var(--bs-cyan);
+    --bs-primary: var(--bs-blue);
+    --bs-link-color: var(--bs-cyan);
+    --bs-link-hover-color: var(--bs-cyan);
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    color: var(--bs-body-color);
+}
+
+input{
+    background-color: var(--bs-card-bg);
+    color: var(--bs-body-color);
+    border: none;
+}
+
+input.date{
+    text-align: center;
+}
+
+.d-flex-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px){
+.d-flex-scale {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.p-5{
+    padding: 1rem !important;
+}
+.px-5{
+    padding-inline: 1rem !important;
+}
+}
+
+.btn{
+    background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
+}
+.btn:hover{
+    background: var(--bs-primary);
+}
+
+#number{
+    text-align: center;
+    color: var(--bs-gray-500);
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    width: min-content; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: -20px;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    margin-left: calc(100vw - 4rem);
+    background-color: rgba(0,0,0,0); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  }
+
+button#switcher{
+    background: none;
+    border: none;
+    color: var(--bs-body-color);
+}
+
+tt{
+    padding: 0;
+    color: inherit;
+    background: none;
+}
