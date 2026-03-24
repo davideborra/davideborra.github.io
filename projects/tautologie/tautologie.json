@@ -138,7 +138,7 @@
 },
 {
     "date" : "",
-    "text" : "$$\\varnothing \\in\\tau\\implies\\emptyset\\in\\tau$$",
+    "text" : "$$\\varnothing \\in\\tau\\implies\\varnothing\\in\\tau$$",
     "author" : "Riccardo Ghiloni",
     "type" : "i"
 },
@@ -1615,6 +1615,12 @@
     "text" : "Probabilmente quello è successivo perché questi sono precedenti",
     "author" : "Loredana Maifredi",
     "date" : "2026-03-21",
+    "type" : "c" 
+},
+{
+    "text" : "Cosa voti oggi? O sì o no.",
+    "author" : "Rudi Sarzi Puttini",
+    "date" : "2026-03-22",
     "type" : "c" 
 }
 ]

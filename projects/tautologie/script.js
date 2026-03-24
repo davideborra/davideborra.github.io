@@ -17,11 +17,6 @@ function renderTex(){
     });
 }
 
-// KaTeX configuration
-document.addEventListener("DOMContentLoaded", function() {
-    renderTex();
-});
-
 function tauto_div(note){
     var div=document.createElement('div');
     div.setAttribute('class', "card overflow-hidden rounded-4 border-0 mb-5");
@@ -81,6 +76,7 @@ function loadNotes(notes){
     }
     tautoNum = notes.length;
     document.getElementById("number").innerHTML= tautoNum+ " tautologie"
+    renderTex();
 }
 
 function add_tauto(){
