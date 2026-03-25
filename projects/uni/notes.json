@@ -127,5 +127,15 @@
         "local": "true",
         "lang": "eng",
         "tags": ["Algebra", "Undergraduate - Year 3", "Geometry", "Free"]
+    },
+    {
+        "title": "Classiﬁcation of Semisimple Lie Algebras",
+        "date": "01/04/26",
+        "text": "Notes for the seminar done as final exam in the course \"Mathematical Physics – Differential Geometric Methods\", supervised by Prof. E. Pagani.. \n It is an introduction to the study of (semi)simple Lie algebras and their classification. Slides can be found <a href='src/beamerLie.pdf'>here</a>.",
+        "link": "src/Lie.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "eng",
+        "tags": ["Algebra", "Master", "Physics", "Free"]
     }
 ]

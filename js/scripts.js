@@ -20,7 +20,7 @@ if(param != null){
             .then(
                 (redirects)=>{
                     for (element of redirects){
-                        if(element.name == param){
+                        if(element.name.toLowerCase() == param.toLowerCase()){
                             location.href = element.url;
                             break;
                         }
