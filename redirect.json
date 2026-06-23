@@ -22,5 +22,9 @@
     {
         "name" : "Lie",
         "url" : "/projects/uni/?index=13"
+    },
+    {
+        "name" : "toric",
+        "url" : "/projects/uni/?index=14"
     }
 ]

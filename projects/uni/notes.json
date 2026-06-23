@@ -131,11 +131,21 @@
     {
         "title": "Classiﬁcation of Semisimple Lie Algebras",
         "date": "01/04/26",
-        "text": "Notes for the seminar done as final exam in the course \"Mathematical Physics – Differential Geometric Methods\", supervised by Prof. E. Pagani.. \n It is an introduction to the study of (semi)simple Lie algebras and their classification. Slides can be found <a href='src/beamerLie.pdf'>here</a>.",
+        "text": "Notes for the seminar done as final exam in the course \"Mathematical Physics – Differential Geometric Methods\", supervised by Prof. E. Pagani. \n It is an introduction to the study of (semi)simple Lie algebras and their classification. Slides can be found <a href='src/beamerLie.pdf'>here</a>.",
         "link": "src/Lie.pdf",
         "free": "true",
         "local": "true",
         "lang": "eng",
         "tags": ["Algebra", "Master", "Physics", "Free"]
+    },
+    {
+        "title": "Weighted Projective Spaces",
+        "date": "23/06/26",
+        "text": "Notes for the seminar done as final exam in the course \"Toric Geometry\", supervised by Prof. E. Postinghel. and Prof. L. E. Solá Conde. \n It is an introduction to the study of weighted projective spaces as toric varieties.",
+        "link": "src/TG_Seminar.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "eng",
+        "tags": ["Master", "Geometry", "Free"]
     }
 ]
