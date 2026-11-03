@@ -1,5 +1,15 @@
 [ 
     {
+        "title": "Esercizi su mappe lineari",
+        "date": "03/11/2026",
+        "text": "Esercizi aggiuntivi sulle mappe lineari tra spazi vettoriali.",
+        "link": "src/esercizi-mappe-lineari.pdf",
+        "free": "true",
+        "local": "true",
+        "lang": "ita",
+        "tags": ["Mappe lineari"]
+    },
+    {
         "title": "Matrice della mappa duale",
         "date": "11/11/2025",
         "text": "Calcolo della matrice associata alla mappa duale.",
@@ -7,7 +17,7 @@
         "free": "true",
         "local": "true",
         "lang": "ita",
-        "tags": ["Duale"]
+        "tags": ["Mappe lineari", "Duale"]
     },
     {
         "title": "Determinante delle matrici a blocchi",
